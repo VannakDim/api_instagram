@@ -30,7 +30,7 @@ Route::delete('/delete-account', [AuthController::class, 'deleteAccount'])->midd
 Route::post('/update-profile', [AuthController::class, 'updateProfile'])->middleware('auth:api');
 
 // Post Route
-Route::get('/posts', [PostController::class, 'index'])->middleware('auth:api');
+Route::get('/posts', [PostController::class, 'index']);
 Route::post('/posts', [PostController::class, 'store'])->middleware('auth:api');
 Route::post('/post/{id}', [PostController::class, 'update'])->middleware('auth:api');
 Route::delete('/post/{id}', [PostController::class, 'destroy'])->middleware('auth:api');
