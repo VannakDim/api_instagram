@@ -15,15 +15,22 @@ class AuthController extends Controller
     // Register new user
     public function register(Request $request){
         $imagePath=null;
+        $validatorName = Validator::make($request->all(),[
+            'name'=>'required|string|max:255|unique:users',
+        ]);
+
+        if($validatorName->fails()){
+            return response()->json(['error'=> $validatorName->errors()],400);
+        }
+
         $validator = Validator::make($request->all(),[
-            'name'=>'required|string|max:255',
             'email'=>'required|string|email|max:255|unique:users',
             'password'=>'required|string|min:8|confirmed',
             'profile_photo'=>'nullable|image|mimes:jpg,png,jpeg,gif,svg|max:2048',
+            'short_bio'=>'nullable|max:255'
         ]);
-
         if($validator->fails()){
-            return response()->json($validator->errors()->toJson(["message"=>"Email already token."]),400);
+            return response()->json(['error'=> "Email already exist"],401);
         }
 
         if($request->hasFile('profile_photo')){
@@ -31,7 +38,7 @@ class AuthController extends Controller
             $name = time().'.'.$image->getClientOriginalExtension();
             $destinationPath = Public_path('/uploads/users');
             $image->move($destinationPath,$name);
-            $imagePath = url('/').'uploads/users/'.$name;
+            $imagePath = url('/').'/uploads/users/'.$name;
         }
 
         $user = User::create([
@@ -39,7 +46,7 @@ class AuthController extends Controller
             'email' => $request->email,
             'password' => Hash::make($request->password),
             'profile_photo' => $imagePath,
-            'short_bio' => $request->short_bio,
+            'short_bio' => $request->short_bio ?? null,
         ]);
 
         $token = $user->createToken('authToken')->accessToken;
