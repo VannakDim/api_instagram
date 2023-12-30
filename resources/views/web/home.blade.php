@@ -32,7 +32,7 @@
                 <div class="col-md-12">
                     <div class="panel panel-info" id="banner-title-shape" style="box-shadow: 0 8px 61px -2px rgba(0,0,0,.2);">
                         <div class="panel-body">
-                            <h4 class="text-primary text-center" id="banner-caption" style="margin-top: 0px; color: #008fd5;"><strong>ព្រះវិហារសភាភិបាលពោធិចិនតុង សូមស្វាគមន៍</strong></h4>
+                            <h4 class="text-primary text-center" id="banner-caption" style="margin-top: 0px; color: #008fd5;">ព្រះវិហារសភាភិបាលពោធិចិនតុង សូមស្វាគមន៍</h4>
                         </div>
                     </div>
                 </div>
