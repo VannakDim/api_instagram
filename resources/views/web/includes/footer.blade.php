@@ -45,7 +45,7 @@ hr{
 
             <div class="col-md-3">
                 <div class="footer-heading">
-                    Company
+                    About us
                 </div>
                 <div class="clearfix"></div>
                 <hr class="hr">
