@@ -18,6 +18,17 @@
 	.about_text{
 		line-height: 3rem;
 	}
+	/*** Testimonial ***/
+	.testimonial-carousel .owl-item .testimonial-item {
+		box-shadow: 0 0 45px rgba(0, 0, 0, .07);
+		border: 1px solid transparent;
+		transform: scale(.85);
+		transition: .5s;
+	}
+	.spacer{
+		padding-top:20px;
+	}
+
 </style>
 
 @endsection
@@ -60,7 +71,7 @@
 						<div class="about_text">
 							<h2 style="padding-bottom: 30px">កម្មវិធីថ្វាយបង្គុំ</h2>
 							<p>
-								ព្រះវិហារសភាភិបាលពោធិចិនតុងមានកម្មវិធីថ្វាយបង្គុំរៀងរាល់ថ្ងៃអាទិត្យ ដោយចែកចេញជា២គឺ៖
+								ព្រះវិហារសភាភិបាលពោធិ៍ចិនតុងមានកម្មវិធីថ្វាយបង្គុំរៀងរាល់ថ្ងៃអាទិត្យ ដោយចែកចេញជា២គឺ៖
 								<ol style="padding-left:50px">
 									<li>1. កម្មវិធីថ្វាយបង្គុំសម្រាប់កុមារ ម៉ោង ៨:០០ ព្រឹក ដល់ម៉ោង ៩:០០ព្រឹក</li>
 									<li>2. កម្មវិធីថ្វាយបង្គុំសម្រាប់មនុស្សធំ ម៉ោង ៩:០០ ព្រឹក ដល់ម៉ោង ១១:០០ព្រឹក</li>
@@ -76,42 +87,16 @@
 			<div class="hero-app-6 custom-animation3"><img src="web/animate_icon/icon_3.png" alt=""></div>
 		<!-- </section> -->
 		<!-- about part start-->
+		<div class="spacer"></div>
+		<h4>លោកអ្នកអាចស្វែងរកទីតាំងព្រះវិហារតាមរយៈផែនទីខាងក្រោម</h4>
+		<iframe style="margin-top:10px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d244.300857029514!2d104.85107016284017!3d11.565208494700398!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310951de9cd132ef%3A0xc55711348494851c!2z4Z6W4Z-S4Z6a4Z-H4Z6c4Z634Z6g4Z624Z6a4Z6f4Z6X4Z624Z6X4Z634Z6U4Z624Z6b4Z6W4Z-E4Z6S4Z634Z-N4Z6F4Z634Z6T4Z6P4Z674Z6EIChQb2NoZW50b25nIFByZXNieXRlcmlhbiBDaHVyY2gp!5e0!3m2!1sen!2skh!4v1703948690079!5m2!1sen!2skh" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 		<hr>
 		<div class="home-posts-head mt-30">
 			<h4 class="home-posts-cat-title"><a class="cat-3" href="#">What's New</a></h4>
 		</div>
-		<div class="row postgrid-horiz grid-style-2">
-			{{-- @foreach($posts as $post)
-			<div class="col-md-6">
-				<div class="post-grid-style">
-					<div class='post-grid-image'>
-						<a class="post-cat cat-1" href="{{ route('categoryPage', $post->category->id) }}" title="{{ $post->category->category_name }}">{{ $post->category->category_name }}</a>
-						<a class="grid-image" href="{{ route('detailsPage', $post->post_slug) }}" title="{{ $post->post_title }}">
-							<img src="{{ get_featured_image_thumbnail_url($post->featured_image) }}" alt="{{ $post->post_title }}">
-						</a>
-					</div>
-
-					<div class="post-detail">
-						<h2>
-							<a style="color: gray" href="{{ route('detailsPage', $post->post_slug) }}" title="{{ $post->post_title }}">
-								{{ \Illuminate\Support\Str::limit($post->post_title, 44, '...') }}
-							</a>
-						</h2>
-						<ul class="post-meta3 pull-left">
-							<li><i class="ti-time"></i><a>{{ date("d F Y", strtotime($post->post_date)) }}</a></li>
-							<li class="admin"><a href="{{ route('authorProfilePage', $post->user->username) }}"><i class="ti-user"></i> {{ $post->user->name }}</a></li>
-						</ul>
-						<ul class="post-meta3 pull-right">
-							<li><i class="fa fa-eye"></i><a title="{{ $post->post_title }}">{{ $post->view_count }}</a></li>
-							<li><a title="{{ $post->post_title }}"><i class="fa fa-comments"></i> {{ $post->comment->count() }}</a></li>
-						</ul>
-						<a href="{{ route('detailsPage', $post->post_slug) }}" class="readmore" title="{{ $post->post_title }}"><i class="ti-more-alt"></i></a>
-					</div>
-				</div>
-			</div>
-			@endforeach --}}
-		</div>
-		{{-- <div class="pagination">{{ $posts->links() }}</div> --}}
+		<h2 style="color:red">Website under construction!</h2>
+		<h2 style="color: plum">Coming soon!!</h2>
+		
 	</div>
 </div>
 @endsection

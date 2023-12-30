@@ -21,10 +21,10 @@
 <link rel="stylesheet" href="{{ asset('web/css/owl.theme.css') }}">
 <link rel="stylesheet" href="{{ asset('web/css/owl.transitions.css') }}">
 <link rel="stylesheet" href="{{ asset('web/css/owl.carousel.css') }}">
+<link rel="stylesheet" href="{{ asset('web/css/owl.carousel.min.css') }}">
 
 <!-- bootstrap -->
 <link rel="stylesheet" href="{{ asset('web/css/bootstrap.min.css') }}">
-<!-- <link rel="stylesheet" href="{{ asset('web/css/bootstrapTheme.css') }}"> -->
 
 <!-- Custom CSS -->
 <link href="{{ asset('web/css/custom.css') }}" rel="stylesheet">

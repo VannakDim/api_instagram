@@ -38,7 +38,7 @@ hr{
                 </div>
                 <div class="clearfix"></div>
                 <hr class="hr">
-                <p style="line-height: 24px; color: #fff; margin: 0 0 10px; font-size: 13px; letter-spacing: 0.09px;">ភូមិតាងួន សង្កាត់កាកាប ខ័ណ្ឌពោធិសែនជ័យ រាជធានីភ្នំពេញ<br>
+                <p class="p-address" style="line-height: 24px; color: #fff; margin: 0 0 10px; font-size: 13px; letter-spacing: 0.09px;">ភូមិតាងួន សង្កាត់កាកាប ខ័ណ្ឌពោធិសែនជ័យ រាជធានីភ្នំពេញ<br>
                 
                 <div class="clearfix visible-xs"><br></div>
             </div>

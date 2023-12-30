@@ -1,5 +1,3 @@
-
-
 <!-- HTML CSS javascript Header --> 
 
   <header class="header">
