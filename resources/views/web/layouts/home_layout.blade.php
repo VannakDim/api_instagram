@@ -21,7 +21,7 @@
                 <div class="container">
                     <div class="row">
                         <!-- left section -->
-                        {{-- @yield('content') --}}
+                        @yield('content')
                         <!-- /. left section -->
 
                         <!-- /. right side widget -->

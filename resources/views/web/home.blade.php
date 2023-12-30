@@ -15,6 +15,9 @@
 			margin-top: 45px;
 		}
 	}
+	.about_text{
+		line-height: 3rem;
+	}
 </style>
 
 @endsection
@@ -41,12 +44,12 @@
 @endsection
 
 @section('content')
-<div class="col-md-8">
-	<div class="crumb inner-page-crumb">
+<div class="col-md-12">
+	{{-- <div class="crumb inner-page-crumb">
 		<ul>
 			<li><i class="ti-home"></i><a href="#">Home</a>  </li>
 		</ul>
-	</div>
+	</div> --}}
 
 	<div class="home-news-block block-no-space">
 
@@ -55,7 +58,14 @@
 				<div class="row align-items-center justify-content-center">
 					<div class="col-md-12">
 						<div class="about_text">
-							<h2>WHO WE ARE</h2>
+							<h2 style="padding-bottom: 30px">កម្មវិធីថ្វាយបង្គុំ</h2>
+							<p>
+								ព្រះវិហារសភាភិបាលពោធិចិនតុងមានកម្មវិធីថ្វាយបង្គុំរៀងរាលថ្ងៃអាទិត្យ ដោយចែកចេញជា២ផ្នែកគឺ៖
+								<ol style="padding-left:50px">
+									<li>1. កម្មវិធីថ្វាយបង្គុំសម្រាប់កុមារ ម៉ោង ៨:០០ ព្រឹក ដល់ម៉ោង ៩:០០ព្រឹក</li>
+									<li>2. កម្មវិធីថ្វាយបង្គុំសម្រាប់មនុស្សធំ ម៉ោង ៩:០០ ព្រឹក ដល់ម៉ោង ១១:០០ព្រឹក</li>
+								</ol>
+							</p>
 							{{-- <p>{!! \Illuminate\Support\Str::limit($page->page_content,4000,'...') !!}</p>
 							<div class="btn btn-primary" style="margin-bottom:20px"><a style="color: antiquewhite" href="{{ route('pagePage', $page->page_slug) }}">Read more</a></div> --}}
 						</div>
