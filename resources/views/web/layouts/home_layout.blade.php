@@ -34,7 +34,7 @@
         <!-- /.first section block -->
 
         <!-- footer -->
-        {{-- @include('web.includes.footer') --}}
+        @include('web.includes.footer')
         <!-- /. footer -->
 
     <!-- </div> -->

@@ -38,12 +38,8 @@ hr{
                 </div>
                 <div class="clearfix"></div>
                 <hr class="hr">
-                <p style="line-height: 24px; color: #fff; margin: 0 0 10px; font-size: 13px; letter-spacing: 0.09px;">{{ $setting->address_line_one }}<br>
-                <!-- {{ $setting->address_line_two }}<br> -->
-                {{ $setting->state }}
-                {{ $setting->city }} {{ $setting->zip }}
-                {{ $setting->country }}<br>
-                <!-- Fax: {{ $setting->fax }}</p> -->
+                <p style="line-height: 24px; color: #fff; margin: 0 0 10px; font-size: 13px; letter-spacing: 0.09px;">ភូមិតាងួន សង្កាត់កាកាប ខ័ណ្ឌពោធិសែនជ័យ រាជធានីភ្នំពេញ<br>
+                
                 <div class="clearfix visible-xs"><br></div>
             </div>
 
@@ -53,10 +49,10 @@ hr{
                 </div>
                 <div class="clearfix"></div>
                 <hr class="hr">
-                @foreach($pages as $page)
-                <a class="btn-link" href="{{ route('pagePage', $page->page_slug) }}">{{ $page->page_name }}</a><br>
-                @endforeach
-                <a class="btn-link" href="{{ route('contactUsPage') }}">Contact Us</a><br>
+                {{-- @foreach($pages as $page) --}}
+                {{-- <a class="btn-link" href="{{ route('pagePage', $page->page_slug) }}">{{ $page->page_name }}</a><br> --}}
+                {{-- @endforeach --}}
+                <a class="btn-link" href="#">Contact Us</a><br>
                 <div class="clearfix visible-xs"><br></div>
             </div>
 
@@ -67,8 +63,8 @@ hr{
                 <div class="clearfix"></div>
                 <hr class="hr">
                 <div class="d-flex pt-2">
-                    <a class="btn btn-outline-light btn-social" href="{{ $setting->facebook }}"><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-outline-light btn-social" href="{{ $setting->telegram }}"><i class="fa fa-paper-plane"></i></a>
+                    <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-light btn-social" href="#"><i class="fa fa-paper-plane"></i></a>
                 </div>
             </div>
 
