@@ -6,7 +6,7 @@
     <nav class="nav">
       <div class="nav__data">
           <a href="#" class="nav__logo">
-          <img id="logo-img" src="{{ asset('web/logo/ppc-logo.png') }}" alt=""​><div class="bsea-title" style="font-size: 1.2rem"><h4> ព្រះវិហារសភាភិបាលពោធិចិនតុង</h4> Pochentong Presbyterian Church</div>
+          <img id="logo-img" src="{{ asset('web/logo/ppc-logo-final.png') }}" alt=""​><div class="bsea-title" style="font-size: 1.2rem"><h4> ព្រះវិហារសភាភិបាលពោធិ៍ចិនតុង</h4> Pochentong Presbyterian Church</div>
           </a>
           
           <div class="nav__toggle" id="nav-toggle">
