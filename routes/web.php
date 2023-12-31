@@ -18,5 +18,5 @@ Route::get('/', function () {
 });
 
 Route::get('/login', function(){
-    return view ('user.login');
+    return view ('web.auth.login');
 });
