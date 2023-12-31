@@ -12,6 +12,10 @@ use Illuminate\Support\Facades\Auth;
 class AuthController extends Controller
 {
 
+    public function index(){
+        return view ('auth.login');
+    }
+
     // Register new user
     public function register(Request $request){
         $imagePath=null;

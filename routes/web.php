@@ -17,6 +17,5 @@ Route::get('/', function () {
     return view('web.home');
 });
 
-Route::get('/login', function(){
-    return view ('web.auth.login');
-});
+Route::get('/login', ['as' => 'login', 'uses' => 'AuthController@index']);
+
