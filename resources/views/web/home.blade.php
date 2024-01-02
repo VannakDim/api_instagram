@@ -3,6 +3,7 @@
 @section('title', "Pochentong Presbyterian Church")
 @section('keywords', "PPC")
 @section('description', "ព្រះវិហារសភាភិបាលពោធិ៍ចិនតុង")
+@section('meta_image', "https://ppc-church.com/web/logo/ppc-logo-blue.png")
 
 @section('style')
 <style>
