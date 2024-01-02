@@ -156,6 +156,7 @@
       var owl = $("#owl-demo");
 
       owl.owlCarousel({
+		lazyLoad : true,
         autoPlay: true,
         navigation : false,
         singleItem : true,
