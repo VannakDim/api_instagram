@@ -11,6 +11,15 @@
 		margin-top: 60px;
 	}
 
+	#owl-christmas .item{
+		margin: 3px;
+	}
+	#owl-christmas .item img{
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+
 	@media screen and (max-width: 1024px) {
 		#owl-demo{
 			margin-top: 45px;
@@ -130,8 +139,25 @@
 		<div class="home-posts-head mt-30">
 			<h4 class="home-posts-cat-title"><a class="cat-3" href="#">What's New</a></h4>
 		</div>
-		<h2 style="color:red">Website under construction!</h2>
-		<h2 style="color: plum">Coming soon!!</h2>
+
+		<h3 class="text-center">CHRISTMAS (24-DEC-2023)</h3>
+		<div id="owl-christmas">
+          
+			<div class="item"><img src="{{ asset('web/images/christmas/chm01.jpg')}}" alt="Owl Image"></div>
+			<div class="item"><img src="{{ asset('web/images/christmas/chm02.jpg')}}" alt="Owl Image"></div>
+			<div class="item"><img src="{{ asset('web/images/christmas/chm03.jpg')}}" alt="Owl Image"></div>
+			<div class="item"><img src="{{ asset('web/images/christmas/chm04.jpg')}}" alt="Owl Image"></div>
+			<div class="item"><img src="{{ asset('web/images/christmas/chm05.jpg')}}" alt="Owl Image"></div>
+			<div class="item"><img src="{{ asset('web/images/christmas/chm06.jpg')}}" alt="Owl Image"></div>
+			<div class="item"><img src="{{ asset('web/images/christmas/chm07.jpg')}}" alt="Owl Image"></div>
+			<div class="item"><img src="{{ asset('web/images/christmas/chm08.jpg')}}" alt="Owl Image"></div>
+			<div class="item"><img src="{{ asset('web/images/christmas/chm09.jpg')}}" alt="Owl Image"></div>
+			
+		   
+		</div>
+
+		<h2 class="text-center" style="color:red">Website under construction!</h2>
+		<h2 class="text-center" style="color: plum">Coming soon!!</h2>
 		
 	</div>
 </div>
@@ -153,14 +179,23 @@
 <script>
     $(document).ready(function() {
 
-      var owl = $("#owl-demo");
+		var owl = $("#owl-demo");
 
-      owl.owlCarousel({
-		lazyLoad : true,
-        autoPlay: true,
-        navigation : false,
-        singleItem : true,
-        transitionStyle : "fade"
-      });
+		owl.owlCarousel({
+			lazyLoad : true,
+			autoPlay: true,
+			navigation : false,
+			singleItem : true,
+			transitionStyle : "fade"
+		});
+
+
+	  	$("#owl-christmas").owlCarousel({
+		autoPlay: 3000, //Set AutoPlay to 3 seconds
+		items : 4,
+		itemsDesktop : [1199,3],
+		itemsDesktopSmall : [979,3]
+
+		});
     });
 </script>
