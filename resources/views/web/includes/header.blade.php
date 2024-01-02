@@ -63,7 +63,7 @@
                       {{ csrf_field() }}
                     </form>
                     @else
-                      <a href="/login" class="dropdown__link">
+                      <a href="/login-page" class="dropdown__link">
                         <i class="ri-user-line"></i> Login
                       </a>                          
                     @endif
