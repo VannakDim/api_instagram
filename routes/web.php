@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use app\Http\Controllers\AuthController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -17,5 +17,7 @@ Route::get('/', function () {
     return view('web.home');
 });
 
-Route::get('/login', ['as' => 'login', 'uses' => 'AuthController@index']);
+Route::get('/login', function(){
+    return view ('auth.login');
+});
 
