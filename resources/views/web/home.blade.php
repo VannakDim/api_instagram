@@ -137,10 +137,9 @@
 		</div>		
 		<hr>
 		<div class="home-posts-head mt-30">
-			<h4 class="home-posts-cat-title"><a class="cat-3" href="#">What's New</a></h4>
+			<h4 class="home-posts-cat-title"><a class="cat-3" href="#">CHRISTMAS (24-DEC-2023)</a></h4>
 		</div>
 
-		<h3 class="text-center">CHRISTMAS (24-DEC-2023)</h3>
 		<div id="owl-christmas">
           
 			<div class="item"><img src="{{ asset('web/images/christmas/chm01.jpg')}}" alt="Owl Image"></div>
