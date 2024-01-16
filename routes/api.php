@@ -6,6 +6,9 @@ use App\Http\Controllers\AuthController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\LikeController;
 use App\Http\Controllers\CommentController;
+use App\Http\Controllers\IncomeController;
+use App\Http\Controllers\ExpenseController;
+use App\Http\Controllers\BalanceController;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -44,3 +47,13 @@ Route::get('comments/{postId}', [CommentController::class, 'show'])->middleware(
 Route::post('comments/{postId}', [CommentController::class, 'store'])->middleware('auth:api');
 Route::post('update-comment/{Id}', [CommentController::class, 'update'])->middleware('auth:api');
 Route::delete('comment/{Id}', [CommentController::class, 'destroy'])->middleware('auth:api');
+
+// Income Route
+Route::get('income', [IncomeController::class, 'index'])->middleware('auth:api');
+Route::post('income', [IncomeController::class, 'store'])->middleware('auth:api');
+
+// Expense Route
+Route::post('expense', [ExpenseController::class, 'store'])->middleware('auth:api');
+
+// Balance Route
+Route::get('balance', [BalanceController::class, 'totalBalance'])->middleware('auth:api');
